@@ -1,0 +1,48 @@
+div.page-template {
+	
+	section.pt-header {
+		background: $blue;
+		padding:40px;
+		color:white;
+		
+		h1 {
+			font-size: 46px;
+			font-family: 'mont-black';
+		}
+		
+		h2 {
+			font-size: 36px;
+			font-family: 'mont-light';
+		}
+		
+		
+	}
+	
+	section.pt-content {
+		padding:40px;
+		background: white;
+	}
+	
+	
+}
+
+span.pt-header {
+	font-family: 'mont-bold';
+	font-size:30px;
+	text-transform: uppercase;
+	margin-bottom:20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #ebebeb;
+	display: inline-block;
+}
+
+@media(min-width:768px) {
+	div.page-template {
+		section.pt-header {
+			padding:100px;
+		}
+		section.pt-content {
+			padding:100px;
+		}
+	}
+}

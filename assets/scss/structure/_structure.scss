@@ -1,0 +1,81 @@
+//BODY STYLES
+
+body, html {
+}
+
+body {
+	font-family: $bodyFont;
+	font-size: $bodyFontSize;
+	color: $bodyFontColor;
+	background: $bodyBGColor;
+}
+
+//LINKS
+a {
+	color:$blue;
+	transition:all 0.25s ease-out;	
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn.orange {
+	@include button($orange, white, 12px);
+}
+
+.btn.orange-outline {
+	background: white;
+	border-color:$orange;
+	color:black;
+	
+	&:hover {
+		background: $orange;
+		color:white;
+	}
+}
+
+.btn.blue {
+	@include button($blue, white, 12px);
+}
+
+.btn-white {
+	@include button(white, $orange, 12px);
+}
+
+.btn-outline {
+	border:1px solid $blue;
+	color:white;
+	
+	&:hover {
+		background:$blue;
+		color:white;
+	}
+	
+}
+
+button {
+	transition:all 0.25s ease-out;
+}
+
+//Typography
+strong {
+	font-family: 'mont-semibold';
+}
+
+//WRAPPER
+div.wrapper {
+	max-width:$wrapperWidth;
+	width:100%;
+	margin:0px auto;
+	background: $wrapperBGColor;
+	height:100%;
+	position: relative;
+}
+
+@media(min-width:992px) {
+	.flex {
+		display: flex;
+		position: relative;
+	}
+}

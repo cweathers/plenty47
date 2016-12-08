@@ -1,0 +1,489 @@
+div.tc {
+	padding:40px;
+	background: white;
+	
+	&.gray {
+		background: $lightGray;
+	}
+	
+	span.tc-small {
+		display: block;
+		color:$orange;
+		font-family: 'mont-light';
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	
+	span.tc-lg {
+		display: block;
+		color:$black;
+		font-family: 'mont-semibold';
+		font-size: 20px;
+		margin-bottom:20px;
+	}
+	
+	span.tc-text {
+		display: block;
+		margin-bottom:40px;
+	}
+	
+}
+
+section.hp-search {
+	padding:80px 40px 250px 40px;
+	text-align: center;
+	color:white;
+    height: 500px;
+    overflow: visible;
+	
+	span.search-heading {
+		font-family: 'mont-bold';
+		font-size: 40px;
+		display: block;
+		text-transform: uppercase;
+	}
+	
+	span.search-text {
+		display: block;
+		margin-bottom:40px;
+	}
+	
+	div.search-wrap {
+		
+		div.input-group {
+			
+		
+			span.input-group-addon {
+				background: $orange;
+				padding:19px;
+				border-color:$orange;
+			}
+			
+			input.form-control {
+				height: auto;
+				padding:22px;
+				font-size: 15px;
+				border-color:$orange;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			
+			button.custom-search-btn {
+				padding:20px 18px;
+				background: $orange;
+				color:white;
+				border:none;
+				
+				&:hover {
+					background: lighten($orange, 10%);
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+
+section.listings {
+	background: white;
+	overflow-x: hidden;
+}
+
+.green-check {
+	color:$green;
+	font-size: 25px;
+}
+
+div.sidebar {
+	
+	padding:80px 0px 80px 80px;
+	
+	span.sb-heading {
+		font-family: 'avenir';
+		font-size: 15px;
+		color:$blue;
+		display: block;
+		margin-bottom:20px;
+		text-transform: uppercase;
+		
+		span {
+			margin-top:10px;
+			width:80%;
+			height: 1px;
+			background: rgba(black, 0.25);
+			display: block;
+		}
+		
+	}
+	
+	a.add-your-city {
+		font-family: 'mont-semibold';
+		font-size: 15px;
+		text-transform: uppercase;
+		color:#ABABAB;
+		display: block;
+		margin:40px 0px;
+		
+		&:hover {
+			color:$orange;
+		}
+		
+	}
+	
+	ul {
+		
+		margin: 0px;
+		padding:0px;
+		
+		li {
+			
+			display: block;
+			list-style: none;
+			
+			a {
+				color:$black;
+				font-family: 'mont-semibold';
+				text-transform: uppercase;
+				margin-bottom:0px;
+				display: inline-block;
+				padding:11px;
+			}
+			
+			a:hover {
+				color:$blue;
+			}
+			
+			&:focus {
+				text-decoration: none;
+			}
+			
+			&:last-child a {
+				margin-bottom:0px;
+			}
+			
+		}
+		
+	}
+	
+}
+
+div.listings {
+	padding:40px;
+}
+
+div.ind-listing {
+	
+	position: relative;
+	background: $lightGray;
+	text-align: center;
+	color:white;
+	padding-bottom:20px;
+	margin-bottom:50px;
+	min-height: 450px;
+	padding-top:1px;
+	
+	div.flash-deal {
+		
+		position: absolute;
+		top:-20px;
+		left:-20px;
+		background: $green;
+		padding: 41px 20px;
+		border-radius: 50%;
+		font-family: 'mont-light';
+		font-size: 12px;
+		text-transform: uppercase;
+		color: white;
+		text-align: center;
+		width: 145px;
+		
+		span {
+			display: block;
+			font-family: 'mont-semibold';
+			font-size: 16px;
+		}
+		
+	}
+	
+	div.ind-img-box {
+		
+		margin:10px;
+		
+		a {
+			
+			img {
+				width:100%;
+				height: auto;
+			}
+			
+		}
+		
+		div.desc {
+			
+			background: $blue;
+			padding:10px 20px;
+			
+			span.ind-name {
+				display: block;
+				font-family: 'mont-light';
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+			
+			span.ind-city {
+				font-family: 'mont';
+				font-size: 8px;
+				text-transform: uppercase;
+			}
+			
+		}
+		
+	}
+	
+	a.desc-link {
+		padding:0px 20px;
+		display: block;
+		height:175px;
+	}
+	
+	span.deal-tag {
+		display: block;
+		font-family: 'mont-bold';
+		font-size: 26px;
+		color:$black;
+		padding-top:40px;
+		text-transform: uppercase;
+	}
+	
+	span.deal-subline {
+		display: block;
+		font-family: 'mont';
+		font-size: 12px;
+		color:$black;
+		padding-top:10px;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+	
+	ul.deal-list {
+		
+		width:100%;
+		display: block;
+		margin: 0px 0px 20px 0px;
+		padding:0px;
+		position: absolute;
+		bottom:0px;
+		left:0px;
+		clear:both;
+		overflow: auto;
+		
+		li {
+			
+			display: inline-block;
+			float: left;
+			width:33.333%;
+			text-align: center;
+			
+			a {
+				
+				display: block;
+				
+				span {
+					display: block;
+					color:$black;
+					font-family: 'mont-light';
+					font-size: 8px;
+					text-transform: uppercase;
+					margin-bottom:8px;
+					opacity: 0;
+					transition:all 0.25s ease-out;
+				}
+				
+				img {
+					
+				}
+				
+			}
+			
+			a:hover {
+				
+				span {
+					opacity: 1;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	background-color:black;
+	border-color:black;
+}
+
+.pagination > li > a, .pagination > li > span {
+	color:black;
+}
+
+div.pages {
+	
+	text-align: center;
+	position: relative;
+	width:100%;
+	
+	nav {
+		display: inline-block;
+		
+		ul.pagination {
+			
+			margin: 0px;
+			padding:0px;
+			
+			li {
+				
+				a {
+					background: white;
+					color:black;
+					font-size: 13px;
+					font-family: 'mont-bold';
+					border-radius:50%;
+					text-align: center;
+					padding:11px 17px;
+					border:none;
+					margin:0px 5px;
+				}
+				
+				a:hover {
+					background: $orange;
+					color:white;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	a.page-prev {
+		position: absolute;
+		left: 0px;
+	}
+	
+	a.page-next {
+		position: absolute;
+		right:0px;
+	}
+	
+}
+
+ul.filter-listings li a.active {
+	background: $green;
+	color:white;
+}
+
+ul.filter-listings li a:focus {
+	text-decoration: none !important;
+}
+
+#listings-loader {
+	position: relative;
+}
+
+.listings-preloader {
+	    background: rgba(250, 250, 250, 0.33);
+    padding: 50px 94px;
+    border-radius: 15px;
+    border: 1px solid rgba(209, 209, 209, 0.28);
+    color: $orange;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    margin-top: 225px;
+}
+
+div#searchOutter {
+	position: relative;
+}
+
+div#searchResults {
+	background: white;
+	z-index: 5000;
+	position: absolute;
+	left:0px;
+	top:0px;
+	border:1px solid #ebebeb;
+	display: none;
+	
+	a.ind-result {
+		display: block;
+		margin-top:0px;
+		color:black;
+		padding:10px;
+		border-bottom:1px solid #ebebeb;
+		
+		img {
+			width:50px;
+			height:50px;
+			margin-right:12px;
+		}
+		
+		div.media {
+			
+			div.media-body {
+				text-align: left;
+				color:black;
+				
+				h4 {
+					color:$blue;
+					font-family: 'mont-semibold';
+					font-size: 18px;
+				}
+			}
+			
+		}
+		
+		&:hover {
+			background: #fafafa;
+		}
+		
+		&.first {
+			margin-top:-20px;
+		}
+	
+	}
+	
+	a.ind-result:last-child {
+		border-bottom:none;
+	}
+	
+}
+
+@media(min-width:768px) {
+	section.hp-search {
+		
+	    height: 600px;
+	    overflow: visible;
+		
+		span.search-heading {
+			font-size: 50px;
+		}
+	}
+	
+	div.listings {
+		padding:80px 80px 80px 0px;
+	}
+}
+
+@media(min-width:1400px) {
+	div.tc {
+		span.tc-lg {
+			font-size: 30px;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+section.hero-404 {
+	background: url(../img/404.jpg) no-repeat center center;
+	background-size: cover;
+	height:500px;
+}
+
+.error-404 {
+	
+	h1 {
+		margin-bottom:40px;
+		color:black;
+		font-size: 35px;
+	}
+	
+	padding:100px;
+	
+	div.alert {
+		font-size: 20px;
+	}
+	
+}

@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'avenirBook';
+    src: url('../fonts/avenir/Avenir-Book.eot');
+    src: url('../fonts/avenir/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir/Avenir-Book.woff') format('woff'),
+         url('../fonts/avenir/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avenirLight';
+    src: url('../fonts/avenir/Avenir-Light.eot');
+    src: url('../fonts/avenir/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir/Avenir-Light.woff') format('woff'),
+         url('../fonts/avenir/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'avenirMedium';
+    src: url('../fonts/avenir/Avenir-Medium.eot');
+    src: url('../fonts/avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir/Avenir-Medium.woff') format('woff'),
+         url('../fonts/avenir/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'avenirRoman';
+    src: url('../fonts/avenir/Avenir-Roman.eot');
+    src: url('../fonts/avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avenir/Avenir-Roman.woff') format('woff'),
+         url('../fonts/avenir/Avenir-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avenirBold';
+    src: url('../fonts/avenir/AvenirNextBold.eot');
+    src: url('../fonts/avenir/AvenirNextBold.eot') format('embedded-opentype'),
+         url('../fonts/avenir/AvenirNextBold.woff2') format('woff2'),
+         url('../fonts/avenir/AvenirNextBold.woff') format('woff'),
+         url('../fonts/avenir/AvenirNextBold.ttf') format('truetype'),
+         url('../fonts/avenir/AvenirNextBold.svg#AvenirNextBold') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirHeavy';
+    src: url('../fonts/avenir/AvenirNextHeavy.eot');
+    src: url('../fonts/avenir/AvenirNextHeavy.eot') format('embedded-opentype'),
+         url('../fonts/avenir/AvenirNextHeavy.woff2') format('woff2'),
+         url('../fonts/avenir/AvenirNextHeavy.woff') format('woff'),
+         url('../fonts/avenir/AvenirNextHeavy.ttf') format('truetype'),
+         url('../fonts/avenir/AvenirNextHeavy.svg#AvenirNextHeavy') format('svg');
+}
+
+@font-face {
+	font-family: 'avenirLightCon';
+	src: url('../fonts/avenir/AvenirNextCondensed-UltraLight.eot');
+	src: url('../fonts/avenir/AvenirNextCondensed-UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/avenir/AvenirNextCondensed-UltraLight.woff') format('woff'),
+		url('../fonts/avenir/AvenirNextCondensed-UltraLight.ttf')  format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirBoldCon';
+	src: url('../fonts/avenir/AvenirNextCondensed-Bold.eot');
+	src: url('../fonts/avenir/AvenirNextCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/avenir/AvenirNextCondensed-Bold.woff') format('woff'),
+		url('../fonts/avenir/AvenirNextCondensed-Bold.ttf')  format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'avenirCon';
+	src: url('../fonts/avenir/AvenirNextCondensed-Regular.eot');
+	src: url('../fonts/avenir/AvenirNextCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/avenir/AvenirNextCondensed-Regular.woff') format('woff'),
+		url('../fonts/avenir/AvenirNextCondensed-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

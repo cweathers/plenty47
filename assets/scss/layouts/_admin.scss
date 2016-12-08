@@ -1,0 +1,192 @@
+.alert-nofade {
+	margin-bottom:20px;
+	padding:20px;
+}
+
+div.admin-sb {
+	
+	background:#403f3f;
+	color:white;
+	float: left;
+	width:300px;
+	height:100%;
+	transition:all 0.25s ease-out;
+	-webkit-box-shadow: 0px 6px 19px -2px rgba(0,0,0,0.63);
+-moz-box-shadow: 0px 6px 19px -2px rgba(0,0,0,0.63);
+box-shadow: 0px 6px 19px -2px rgba(0,0,0,0.63);
+	
+	&.sb-open {
+		width:0px;
+	}
+	
+	div.asb-logo {
+		background: $orange;
+		padding:15px;
+		text-align: center;
+		height:72px;
+		
+		img {
+			height:40px;
+			display: inline-block;
+		}
+		
+	}
+	
+	ul {
+		
+		display: block;
+		margin: 0px;
+		padding:0px;
+		width:100%;
+		overflow: hidden;
+		
+		li {
+			
+			display: block;
+			list-style: none;
+			width:100%;
+			
+			a {
+				background: rgba(white, 0.15);
+				border-bottom:1px solid rgba(white, 0.25);
+				padding:20px;
+				display: block;
+				color:white;
+				text-transform: uppercase;
+				font-family: 'mont-semibold';
+				font-size: 12px;
+			}
+			
+			a:hover, a.active {
+				background: $blue;
+				border-bottom-color:lighten($blue, 25%);
+			}
+			
+		}
+		
+	}
+	
+}
+
+div.admin-content {
+	float: left;
+	width:calc(100% - 300px);
+	min-height:100%;
+	transition:all 0.25s ease-out;
+	background: #ebebeb;
+	
+	&.sb-open {
+		width:100%;
+	}
+	
+	.admin-content-padder {
+		margin:40px;
+		padding:40px;
+		background: white;
+	}
+	
+}
+
+div.admin-header {
+	height: 72px;
+	background: white;
+	
+	a.toggleAdminSb {
+		background: $orange;
+		border-left:1px solid lighten($orange, 25%);
+		color:white;
+		font-size: 22px;
+		float: left;
+		height:72px;
+		width:72px;
+		text-align: center;
+		position: relative;
+		padding:18px 0px;
+		margin-right:40px;
+		
+		&:hover {
+			background: lighten(saturate($orange, 5%), 5%);
+		}
+		
+	}
+	
+	a.adminLogout {
+		background: $blue;
+		color:white;
+		font-size: 22px;
+		float: right;
+		height:72px;
+		width:72px;
+		text-align: center;
+		position: relative;
+		padding:18px 0px;
+		
+		&:hover {
+			background: lighten(saturate($blue, 5%), 5%);
+		}
+		
+	}
+	
+	h1 {
+		margin: 0px;
+		padding-top:15px;
+		float:left;
+	}
+	
+}
+
+.fa-circle.red {
+	color:red;
+	font-size: 17px;
+}
+
+.fa-circle.green {
+	color:green;
+	font-size: 17px;
+}
+
+.datatable tr {
+	vertical-align: middle;
+}
+
+.vendor-thumb {
+	height:50px;
+	width: auto;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	vertical-align: middle;
+}
+
+.example-page {
+	border:2px solid black;
+	margin:50px;
+}
+
+@media(min-width:768px) {
+	.dataTables_filter {
+		float: right;
+		
+		input {
+			margin-left:20px;
+		}
+		
+	}
+	
+	.dataTables_length select {
+		margin:0px 10px;
+	}
+	
+	.dataTables_length {
+		padding-bottom:20px;
+		margin-bottom:20px;
+		border-bottom:1px solid #ebebeb;
+	}
+	
+	.dataTables_filter {
+		padding-bottom:20px;
+		margin-bottom:20px;
+		border-bottom:1px solid white;
+	}
+
+}

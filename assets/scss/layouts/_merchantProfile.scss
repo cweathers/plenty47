@@ -1,0 +1,415 @@
+section.merchant-hero {
+	position: relative;
+}
+
+div.mh-sidebar {
+	
+	background: rgba(black, 0.6);
+	padding:40px;
+	color:white;
+	position: relative;
+	
+	img.vendor-logo {
+		width:100px;
+		height: auto;
+	}
+	
+	span.mh-name {
+		font-size: 28px;
+		display: block;
+		font-family: 'mont-semibold';
+		margin:20px 0px 0px 0px;
+	}
+	
+	ul.mh-list {
+		
+		margin: 0px;
+		padding:0px;
+		overflow: auto;
+		
+		li {
+			
+			font-size: 14px;
+			margin-bottom:20px;
+			display: block;
+			list-style: none;
+			
+			strong {
+				font-family: 'mont-semibold';
+			}
+			
+			a {
+				color:white;
+			}
+			
+			a.mh-directions {
+				
+				color:white;
+				float: left;
+				
+				span {
+					display: block;
+					text-transform: uppercase;
+					font-size: 10px;
+					padding-top:8px;
+				}
+				
+			}
+			
+		}
+		
+	}
+}
+
+div.mh-bot {
+	color:white;
+	padding:40px;
+	
+	div.mhb-left {
+		text-transform: uppercase;
+		
+		span.current-top {
+			display: block;
+			font-family: 'mont-light';
+			font-size: 14px;
+		}
+		
+		span.current-price {
+			display: block;
+			font-family: 'mont-bold';
+			font-size: 38px;
+		}
+		
+		span.current-tag {
+			display: block;
+			font-size: 18px;
+			font-family: 'mont-light';
+			margin-bottom:20px;
+		}
+		
+	}
+
+}
+
+.lg-btns {
+	padding-top:20px;
+}
+
+section.profileDets {
+	padding:100px 0px;
+	overflow: hidden;
+}
+
+div.profile-sb {
+	background: #FFFFFF;
+	box-shadow: -2px 4px 22px 3px rgba(0,0,0,0.14);
+	padding:40px;
+	position: relative;
+	top:-100px;
+}
+
+div.psb-sect {
+	
+	border-bottom:1px solid #ebebeb;
+	padding:20px 0px;
+	
+	span.psb-left {
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family: 'mont-bold';
+		color:black;
+		float: left;
+	}
+	
+	span.psb-right {
+		float: right;
+		text-align: center;
+		min-width:50px;
+		
+		span {
+			display: block;
+			font-family: 'mont-semibold';
+			color:#B6B8C2;
+			font-size:16px;
+		}
+	}
+	
+}
+
+ul.psb-icons {
+	
+	margin: 0px;
+	padding:15px 0px 0px 0px;
+	overflow: auto;
+	
+	li {
+		
+		float:left;
+		display: inline-block;
+		
+		a {
+		
+			display: block;
+			color:#B6B8C2;
+			font-size: 25px;
+			margin-right:20px;
+			
+			&:hover {
+				color:$orange;
+			}
+			
+		}
+		
+		&:last-child a {
+			margin-right:0px;
+		}
+		
+	}
+	
+}
+
+div.dealDets {
+	padding:0px 40px;
+}
+
+div.deal-section {
+	
+	margin-bottom:50px;
+	
+	span.ds-heading {
+		display: block;
+		color:$black;
+		font-family: 'mont-semibold';
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	
+	span.ds-line {
+		display: block;
+		margin:15px 0px;
+		width:100%;
+		max-width:800px;
+		height:1px;
+		background: $black;
+	}
+	
+}
+
+div.redeemDeal {
+	
+	margin-bottom:50px;
+	
+	span.rd-name {
+		display: block;
+		margin-bottom:20px;
+		font-family: 'mont-bold';
+		font-size: 24px;
+		color:$black;
+	}
+	
+	ul {
+		
+		li {
+			
+			margin-right:20px;
+			
+			img {
+				height:100px;
+				width: auto;
+			}
+			
+		}
+		
+		li:last-child {
+			margin-right:0px;
+		}
+		
+	}
+	
+}
+
+.mhb-right a img {
+	margin-left:10px;
+}
+
+.middle-msg {
+	background: #fafafa;
+	padding:40px;
+	border:1px solid #ebebeb;
+	margin-top:50px;
+	
+	h1 {
+		color:$blue;
+		border-bottom:1px solid #ebebeb;
+		padding-bottom:30px;
+		margin-bottom:30px;
+	}
+	
+}
+
+.help-block {
+	font-size: 11px;
+}
+
+img.deal-thumbnail {
+	width:50px;
+	height: auto;
+}
+
+#vendor-deals tr td {
+	vertical-align: middle;
+}
+
+.currentImg {
+	width:auto;
+	height: 200px;
+}
+
+.spacer {
+	height: 50px;
+	display: block;
+}
+
+.profile-not-li {
+	
+	margin-bottom:150px;
+	
+	p {
+		font-family: 'mont-semibold';
+		font-size: 14px;
+		
+		a {
+			margin-top:15px;
+			display: inline-block;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media(min-width:768px) {
+	div.mh-sidebar {
+		float: left;
+	}
+	
+	div.mh-bot {
+		position: absolute;
+		bottom:0px;
+		right:0px;
+		width:768px;
+		padding:50px;
+		color:white;
+		
+		div.mhb-left {
+			float: left;
+			text-transform: uppercase;
+			
+			span.current-top {
+				display: block;
+				font-family: 'mont-light';
+				font-size: 14px;
+			}
+			
+			span.current-price {
+				display: block;
+				font-family: 'mont-bold';
+				font-size: 38px;
+			}
+			
+			span.current-tag {
+				display: block;
+				font-size: 18px;
+				font-family: 'mont-light';
+				margin-bottom:0px;
+			}
+			
+		}
+		
+	}
+		
+	.mhb-right {
+		float: right;
+		bottom:50px;
+		right:50px;
+		position: absolute;
+	}
+	
+	.btn-spacer {
+		margin-right:15px;
+	}
+
+}
+
+ul.fact-list {
+	
+	margin: 40px 0px 0px 0px;
+	padding:0px;
+	
+	li {
+		background: url(../img/fact-bullet.png) no-repeat left center;
+		padding:10px 10px 10px 40px;
+		display: block;
+		list-style: none;
+		margin-bottom:10px;
+		
+	}
+}
+
+ul.merchant-photos {
+	
+	margin: 50px 0px 0px 0px;
+	padding:0px;
+	
+	li {
+		float: left;
+		width: calc(33.333% - 20px);
+		margin-bottom:20px;
+		margin-right:20px;
+		box-sizing: border-box;
+		display: inline-block;
+		position: relative;
+		
+		img {
+			width:100%;
+			height:auto;
+		}
+	}
+	
+}
+
+section.relevant-listings {
+	padding:50px;
+	background: white;
+}
+
+.alsoLike {
+	font-size: 21px;
+	text-transform: uppercase;
+	color:$black;
+	display: block;
+	margin-bottom:40px;
+}
+
+.vendorCta.gray {
+	background: #555555;
+	color:white;
+	
+	a {
+		background: $blue;
+		border-color:$blue;
+		color:white;
+	}
+}
+
+textarea.form-control {
+	min-height:150px;
+}
+
+@media(min-width:992px) {
+	div.profile-sb {
+		top:0px;
+	}
+	
+	div.dealDets {
+		padding:0px 100px;
+	}
+}

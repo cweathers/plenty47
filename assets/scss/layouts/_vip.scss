@@ -1,0 +1,211 @@
+.vip-card {
+	max-width:150px;
+	margin-bottom:20px;
+}
+
+.fieldset-nobot {
+	background:none;
+}
+
+ul.fundraiser-list {
+	
+	margin: 0px;
+	padding:50px 0px 0px 0px;
+	
+	li {
+		
+		float: left;
+		display: inline-block;
+		width:calc(33.333% - 27px);
+		margin-right:40px;
+		margin-bottom:40px;
+		position: relative;
+		padding:10px;
+		border:1px solid $orange;
+		border-radius:3px;
+		text-align: center;
+		transition:all 0.25s ease-out;
+		
+		&:hover {
+			border-color:$blue;
+		}
+		
+		&:hover div.fundraiser-bubble {
+			opacity: 1;
+			visibility:visible;
+		}
+		
+		a.fundraiser-info {
+			float:right;
+			color: #D8D8D8;
+			position:relative;
+			font-size: 19px;
+			
+		}
+		
+		div.fundraiser-bubble {
+			width:300px;
+			height:140px;
+			position: absolute;
+			top:-160px;
+			left:50%;
+			margin-left:-150px;
+			opacity:0;
+			visibility:hidden;
+			transition:all 0.25s ease-out;
+			background: $orange;
+			color:white;
+			padding:20px;
+			text-align: justify;
+			border-radius:3px;
+			
+			i.fa-caret-down {
+				font-size: 30px;
+				color:$orange;
+				position: absolute;
+				left:50%;
+				transform: translateX(-50%);
+				bottom:-19px;
+			}
+			
+			a {
+				color:white;
+				text-transform: uppercase;
+				font-size: 11px;
+				padding-top:10px;
+				display: inline-block;
+			}
+			
+		}
+		
+		span.fl-name {
+			display: block;
+			text-align: center;
+			text-transform: uppercase;
+			color:#4A4A4A;
+			padding-top:40px;
+		}
+		
+		a.select-fundraiser {
+			color:#EAEAEA;
+			font-size: 35px;
+			padding-top:20px;
+			display: inline-block;
+			
+			&.active {
+				color:$blue;
+			}
+			
+		}
+		
+		&:nth-child(3n+3) {
+			margin-right:0px;
+		}
+		
+	}
+	
+}
+
+div.review-section {
+	margin-bottom:40px;
+}
+
+span.rs-heading {
+	display: block;
+	text-transform: uppercase;
+	color:#4A4A4A;
+	margin-bottom:10px;
+	font-family: 'mont-semibold';
+}
+
+#fundraiser-error {
+	display: none;
+}
+
+.shipping-address {
+	display: none;
+}
+
+h1.success-heading {
+	font-family: 'mont-bold';
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	margin-bottom:0px;
+	padding:0px;
+}
+
+div.success-box {
+	padding:40px 0px;
+	
+	a.btn-primary {
+		margin-top:20px;
+	}
+	
+	a.black {
+		color:#464646;
+	}
+	
+}
+
+img.s-share {
+	margin-left:10px;
+}
+
+ul.psb-icons.success {
+	display: inline-block;
+}
+
+.btn.blue.active {
+	background: $green;
+	border-color:$green;
+}
+
+.changeCover {
+	position: absolute;
+	right: 40px;
+	bottom:40px;
+}
+
+.fieldset-heading {
+	color:black;
+	font-size: 20px;
+	display: block;
+	margin-bottom:20px;
+}
+
+.vip-padder {
+	padding:0px 40px;
+}
+
+div.listings.profile {
+	padding:0px;
+	
+	div.ind-listing {
+		min-height: 20px;
+	}
+	
+}
+
+.psb-sect a {
+	display: block;
+	color:black;
+	
+	&.active span.psb-left {
+		color:$orange;
+	}
+	
+	span.psb-left {
+		transition:all 0.25s ease-out;
+	}
+	
+	&:hover span.psb-left {
+		color:$orange;
+	}
+	
+}
+
+@media(min-width:768) {
+	.vip-padder {
+		padding:0px 100px;
+	}
+}
