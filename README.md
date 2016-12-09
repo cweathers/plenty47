@@ -1,6 +1,5 @@
 # Plenty 4/7
 
-Plenty 4/7
 
 Plenty4/7 was conceived from the premise that hard-working local businesses, the communities in which they serve and impactful charitable organizations could all win and thrive, together, within one business platform. As this concept expanded, we became increasingly determined to perfect a winning formula focused on four central pillars; Community, Commerce, Charity, Connected.
 
