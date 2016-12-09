@@ -1,0 +1,211 @@
+
+
+span.orange-title {
+	font-family: 'mont-bold';
+	font-size: 30px;
+	color:$orange;
+	display: block;
+	padding-top:50px;
+	padding-bottom:40px;
+	margin-bottom:40px;
+	border-bottom:1px solid #ebebeb;
+}
+
+.form-control {
+	background: #EAEAEA;
+	border-radius:2px;
+	border:none;
+	height: auto;
+	padding:8px;
+	box-shadow: none;
+	color:$black;
+	transition:all 0.25s ease-out;
+}
+
+select.form-control {
+	height:36px;
+	border-radius:2px;
+}
+
+label {
+	font-size: 10px;
+	color:$black;
+	font-family: 'mont-light';
+	text-transform: uppercase;
+	display: block;
+}
+
+fieldset {
+	
+	background:url(../img/dash.jpg) repeat-x left bottom transparent;
+	padding-bottom:40px;
+	margin-bottom:40px;
+	
+	legend {
+		font-family: 'mont-semibold';
+		font-size: 20px;
+		color:$black;
+		display: block;
+		border: none;
+		margin-bottom:20px;
+		text-transform: uppercase;
+	}
+	
+}
+
+div.steps {
+	
+	display: inline-block;
+	position: relative;
+	
+	ul {
+		
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+		z-index: 1000;
+		
+		li {
+			
+			display: inline-block;
+			float:left;
+			
+			a {
+				
+				display: block;
+				margin-right:100px;
+				color:#B6B8C2;
+				
+				div.sc-wrap {
+					background: $lightGray;
+					padding:0px 20px;
+				}
+				
+				span.step-circle {
+					
+					    display: inline-block;
+					    font-size: 8px;
+					    border-radius: 50%;
+					    padding: 7px 10px;
+					    background: $lightGray;
+					    border: 1px solid #B6B8C2;
+					    transition:all 0.25s ease-out;
+					
+				}
+				
+				span.step-name {
+					display: block;
+					opacity: 0;
+					text-transform: uppercase;
+					font-family: 'mont-semibold';
+					font-size: 10px;
+					padding-top:15px;
+					transition:all 0.25s ease-out;
+				}
+				
+			}
+			
+			&:last-child a {
+				margin: 0px;
+			}
+			
+			&.active a {
+				color:$blue;
+				
+				span.step-circle {
+					border-color:$blue;	
+				}
+				
+				span.step-name {
+					opacity: 1;
+				}
+				
+				&:hover {
+					color:$blue;
+					
+					span.step-circle {
+						border-color:$blue;	
+					}
+				}
+				
+			}
+			
+			&:hover a {
+				color:$black;
+				
+				span.step-circle {
+					border-color:$black;
+				}
+				
+				&> span.step-name {
+					opacity: 1;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+span.step-line {
+	position: relative;
+	z-index: 500;
+	margin-top:-47px;
+	height:1px;
+	background: #B6B8C2;
+	width:100%;
+	display: block;
+}
+
+.rel {
+	position: relative;
+}
+
+.form-control.error {
+	border-bottom:2px solid $errorRed;
+}
+
+span.error {
+	color:$errorRed;
+	display: block;
+	padding-top:10px;
+}
+
+div#filelist, div#coverlist, div#logolist, div.filelist {
+	div {
+		border-bottom:dashed 1px #ebebeb;
+		padding:10px;
+		font-family: 'mont-light';
+		font-size: 15px;
+		color:$black;
+		border-left:6px solid darken($blue, 5%);
+	}
+	
+	div:nth-child(even) {
+		border-left-color:lighten(saturate($blue, 10%), 10%);
+	}
+}
+
+@media(min-width:768px) {
+	div.signup-line {
+		padding-left:40px;
+		margin-left:10px;
+		border-left:1px solid #ebebeb;
+	}
+	
+	div.signup-side {
+		height: 100%;
+		width:100%;
+		position: absolute;
+		top:0px;
+		left:0px;
+	}
+	
+	span.orange-title {
+		padding-bottom:0px;
+		margin-bottom:0px;
+		border-bottom:none;
+	}
+
+
+}

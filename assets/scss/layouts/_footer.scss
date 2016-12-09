@@ -1,0 +1,287 @@
+footer {
+	
+	color:#B6B8C2;
+	
+	div.footer-top {
+		
+		background: $lightGray;
+		padding:40px;
+		
+		div.ft-left {
+			margin-right:0px;
+		}
+		
+		ul.ft-menu {
+			
+			border-bottom:1px solid #B6B8C2;
+			overflow: auto;
+			margin:0px;
+			padding:0px;
+			
+			li {
+				
+				display: block;
+				list-style: none;
+				
+				a {
+					font-family: 'mont';
+					color:#B6B8C2;
+					display: block;
+					padding:10px;
+					text-transform: uppercase;
+					text-align: center;
+				}
+				
+				a:hover {
+					color:$blue;
+				}
+				
+			}
+			
+		}
+		
+		ul.social {
+			
+			margin: 0px;
+			padding:0px;
+			overflow: auto;
+			
+			li {
+				
+				display: inline-block;
+				float: left;
+				width:20%;
+				
+				a {
+					display: block;
+					color:$blue;
+					padding:8px 15px;
+					font-size: 20px;
+				}
+				
+				a:hover {
+					color:lighten(saturate($blue, 10%), 10%);
+				}
+				
+			}
+			
+		}
+		
+		.ft-pad {
+			padding:40px 40px;
+			position: relative;
+			
+			img {
+			}
+			
+			.input-group {
+				
+				padding-top:2px;
+				
+				.form-control {
+					text-transform: uppercase;
+					background: none;
+					border-left:none;
+					border-top:none;
+					border-right:none;
+					box-shadow: none;
+					border-radius:0px;
+					border-bottom-color:#B6B8C2;
+				}
+				
+				.input-group-addon {
+					background: none;
+					border-left:none;
+					border-top:none;
+					border-right:none;
+					border-bottom-color:#B6B8C2;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	div.footer-bottom {
+		font-size: 12px;
+		color:white;
+		background: $orange;
+		padding:8px 50px;
+		
+		span.fb-left {
+			float: left;
+		}
+		
+		span.fb-right {
+			float: right;
+		}
+		
+		a {
+			color:white;
+		}
+		
+		a:hover {
+			color:white;
+		}
+		
+	}
+	
+}
+
+@media(min-width:768px) {
+	footer {
+	
+		color:#B6B8C2;
+		height:279px;
+		
+		div.footer-top {
+			
+			background: $lightGray;
+			padding:100px 50px 50px 50px;
+			
+			div.ft-left {
+				margin-right:50px;
+			}
+			
+			ul.ft-menu {
+				
+				border-bottom:1px solid #B6B8C2;
+				overflow: auto;
+				margin:0px;
+				padding:0px;
+				
+				li {
+					
+					display: inline-block;
+					float: left;
+					width:auto;
+					
+					a {
+						font-family: 'mont';
+						color:#B6B8C2;
+						display: block;
+						padding:8px 15px;
+						text-transform: uppercase;
+					}
+					
+					a:hover {
+						color:$blue;
+					}
+					
+					&:first-child a {
+						padding-left:0px;
+					}
+					
+				}
+				
+			}
+			
+			ul.social {
+				
+				margin: 0px;
+				padding:0px;
+				
+				li {
+					
+					display: inline-block;
+					float: left;
+					width:auto;
+					
+					a {
+						display: block;
+						color:$blue;
+						padding:8px 15px;
+						font-size: 20px;
+					}
+					
+					a:hover {
+						color:lighten(saturate($blue, 10%), 10%);
+					}
+					
+					&:first-child a {
+						padding-left:0px;
+					}
+					
+				}
+				
+			}
+			
+			.ft-pad {
+				padding:0px 40px;
+				position: relative;
+				
+				img {
+					position: relative;
+					top:-20px;
+				}
+				
+				.input-group {
+					
+					padding-top:2px;
+					
+					.form-control {
+						text-transform: uppercase;
+						background: none;
+						border-left:none;
+						border-top:none;
+						border-right:none;
+						box-shadow: none;
+						border-radius:0px;
+						border-bottom-color:#B6B8C2;
+					}
+					
+					.input-group-addon {
+						background: none;
+						border-left:none;
+						border-top:none;
+						border-right:none;
+						border-bottom-color:#B6B8C2;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		div.footer-bottom {
+			font-size: 12px;
+			color:white;
+			background: $orange;
+			padding:8px 50px;
+			
+			span.fb-left {
+				float: left;
+			}
+			
+			span.fb-right {
+				float: right;
+			}
+			
+			a {
+				color:white;
+			}
+			
+			a:hover {
+				color:white;
+			}
+			
+		}
+		
+	}
+}
+
+#fundraiserSearch {
+	border-bottom:1px solid #B6B8C2 !important;
+}
+
+section.static-login {
+	padding:40px;
+}
+
+@media(min-width:768px) {
+	section.static-login {
+		padding:100px;
+	}
+}

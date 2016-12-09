@@ -1,0 +1,243 @@
+.fund-min {
+	min-height: 500px;
+}
+
+
+.frh-left {
+	
+	padding-top:100px;
+	display: inline-block;
+	color:white;
+	margin-left:40px;
+	
+	.fundraiser-logo {
+		width:150px;
+		height: auto;
+		background: white;
+		padding:15px;
+	}
+	
+	span.frh-name {
+		display: block;
+		font-size: 35px;
+		font-family: 'mont';
+		padding-top:60px;
+	}
+	
+	span.frh-cat {
+		display: block;
+		font-size: 14px;
+		font-family: 'mont-light';
+		text-transform: uppercase;
+	}
+}
+
+.frh-right {
+	background: rgba(white, 0.4);
+	color:white;
+	padding:30px;
+	margin-top:40px;
+	display: block;
+	text-align: center;
+	
+	span.frh-pitch {
+		font-size: 18px;
+		margin-bottom:40px;
+		text-align: left;
+		display: block;
+	}
+	
+	a {
+		background: $green;
+		border-color:$green;
+		color:white;
+		text-transform: uppercase;
+		font-family: 'mont-semibold';
+		padding:10px 35px;
+		border-radius:3px;
+	
+		&:hover {
+			color:white;
+			background:saturate(lighten($green, 10%), 10%);
+			border-color:saturate(lighten($green, 10%), 10%);
+		}
+	
+	}
+	
+}
+
+a.fundraiser-editDetails {
+	background: $blue;
+	color:white;
+	padding:8px 11px;
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+
+.exHeight {
+	min-height: 250px;
+	margin-bottom:20px;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+#currentVideo {
+	margin-bottom:20px;
+	max-width:800px;
+}
+
+p.padBoth {
+	display: block;
+	margin:20px 0px;
+}
+
+.psb-right.text-left {
+	text-align: left !important;
+}
+
+.cancel-box {
+	background: #fafafa;
+	padding:40px;
+	border:1px solid #ebebeb;
+}
+
+.fundraiser-more {
+	padding:40px 20px 20px 20px;
+}
+
+.fr-more-left {
+	color:black;
+	text-align: left;
+	
+}
+
+.fr-more-btn {
+	position: absolute;
+	bottom:20px;
+	display: block;
+	margin:0px 20px;
+	width:calc(100% - 40px);
+}
+
+section.fundraiser-listings {
+	padding:40px;
+}
+
+
+@media(min-width:768px) {
+	
+	section.fundraiser-listings {
+		padding:100px;
+	}
+	
+	.pad-top-list {
+		padding-top:250px;
+	}
+	
+	.frh-right {
+		
+		span.frh-pitch {
+			float: left;
+			width:250px;
+			margin-right:40px;
+			font-size: 18px;
+			margin-bottom:0px;
+		}
+		
+		a {
+			float: right;
+			background: $green;
+			border-color:$green;
+			color:white;
+			text-transform: uppercase;
+			font-family: 'mont-semibold';
+			padding:10px 35px;
+			border-radius:3px;
+		
+			&:hover {
+				color:white;
+				background:saturate(lighten($green, 10%), 10%);
+				border-color:saturate(lighten($green, 10%), 10%);
+			}
+		
+		}
+		
+	}
+	
+}
+
+@media(min-width:1200px) {
+	.frh-left {
+	
+		position: absolute;
+		left: 50px;
+		bottom:50px;
+		display: inline-block;
+		color:white;
+		
+		.fundraiser-logo {
+			width:150px;
+			height: auto;
+			float: left;
+			margin-right:40px;
+		}
+		
+		span.frh-name {
+			display: block;
+			font-size: 38px;
+			font-family: 'mont';
+			white-space: nowrap;
+			padding-top:60px;
+		}
+		
+		span.frh-cat {
+			display: block;
+			font-size: 14px;
+			font-family: 'mont-light';
+			text-transform: uppercase;
+		}
+	}
+	
+	.frh-right {
+		
+		position: absolute;
+		float:right;
+		background: rgba(white, 0.4);
+		bottom:50px;
+		right:50px;
+		color:white;
+		padding:30px;
+		
+		span.frh-pitch {
+			float: left;
+			width:250px;
+			margin-right:40px;
+			font-size: 18px;
+			margin-bottom:0px;
+		}
+		
+		a {
+			float: right;
+			background: $green;
+			border-color:$green;
+			color:white;
+			text-transform: uppercase;
+			font-family: 'mont-semibold';
+			padding:10px 35px;
+			border-radius:3px;
+		
+			&:hover {
+				color:white;
+				background:saturate(lighten($green, 10%), 10%);
+				border-color:saturate(lighten($green, 10%), 10%);
+			}
+		
+		}
+		
+	}
+	
+	#fr-dets {
+		float: left;
+	}
+}

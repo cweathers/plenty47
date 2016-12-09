@@ -1,0 +1,12 @@
+@mixin button($bgColor, $color, $fontSize) {
+  color:$color;
+	text-transform: uppercase;
+	background: $bgColor;
+	border-color:$bgColor;
+	font-size: $fontSize;
+	
+	&:hover {
+		background: lighten(saturate($bgColor, 5%), 5%);
+		border-color:lighten(saturate($bgColor, 5%), 5%);
+	}
+}

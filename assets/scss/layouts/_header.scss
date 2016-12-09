@@ -1,0 +1,166 @@
+.btn-primary {
+	background:$blue;
+	border-color:$blue;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background: saturate(lighten($blue, 10%), 10%);
+	border-color: saturate(lighten($blue, 10%), 10%);
+}
+
+//HEADER STYLES
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+
+header {
+	background: $orange;
+	padding:10px 20px;
+	width:100%;
+	text-align: center;
+	position: relative;
+	height:$headerHeight;
+	z-index: 4000;
+	
+	a.menu-link {
+		
+		float: left;
+		color:white;
+		margin-top:9px;
+		font-family: 'mont-bold';
+		
+		span.menu-icon {
+			
+			float: left;
+			margin-right: 0px;
+			
+			span {
+				height:1px;
+				background: white;
+				display: block;
+				margin-bottom:8px;
+				transition:all 0.25s ease-out;
+			}
+			
+			span.top {
+				width:25px;
+			}
+			span.mid {
+				width:15px;
+			}
+			span.bot {
+				width:25px;
+			}
+		}
+		
+		span.menu-text {
+			float: left;
+		}
+		
+		&:hover {
+			span.menu-icon {
+				span.top { width: 35px; }
+				span.mid { width: 20px; }
+				span.bot { width: 35px; }
+			}
+		}
+		
+	}
+	
+	a.logo {
+		display: inline-block;
+		float: right;
+	}
+	
+	ul.menu-right {
+		
+		float: right;
+		top:8px;
+		position: relative;
+		
+		li {
+			
+			display: inline-block;
+			float: left;
+			
+			a {
+				color:white;
+				font-family: 'mont-semibold';
+				text-transform: uppercase;
+				margin-right:50px;
+			}
+			
+			a.search-site {
+				position: relative;
+				top:-2px;
+			}
+			
+			a.login-btn {
+				
+			}
+			
+			a.join-btn {
+				background: $blue;
+				padding:7px 14px;
+				border-radius:2px;
+			}
+			
+			a.join-btn:hover {
+				background: lighten(saturate($blue, 10%), 10%);
+			}
+			
+			&:last-child a {
+				margin:0px;
+			}
+			
+		}
+		
+	}
+	
+}
+
+a.header-avatar {
+	display: block;
+}
+
+a.header-avatar img {
+	    height: 39px;
+	    margin-top: -10px;
+	    margin-right: -11px;
+	    border-radius:50%;
+}
+
+a.logout-link {
+	font-size: 20px;
+}
+
+@media(min-width:500px) {
+	header {
+		a.logo {
+			left:50%;
+			margin-left:-63px;
+			position: absolute;
+			top:7px;
+		}
+	}
+}
+
+@media(min-width:768px) {
+	//HEADER STYLES
+	header {
+		
+		a.menu-link {
+			
+			span.menu-icon {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+@media(min-width:$wrapperWidth) {
+	header {
+		max-width:$wrapperWidth;
+		margin:0px auto;
+	}
+}

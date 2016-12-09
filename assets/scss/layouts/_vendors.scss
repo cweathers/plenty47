@@ -1,0 +1,300 @@
+section.hero {
+	color:white;
+	padding:50px;
+	margin-top:$headerHeight;
+	position: relative;
+	
+	h1 {
+		font-family: 'mont-black';
+		font-size: 30px;
+		margin: 0px;
+		padding:0px;
+		text-transform: uppercase;
+		
+	}
+	
+	h2 {
+		font-family: 'mont-light';
+		font-size:20px;
+		margin: 20px 0px;
+		padding:0px;
+	}
+	
+	span.hero-text {
+		display: block;
+		padding-bottom:40px;
+	}
+	
+	.btn-outline {
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-right:20px;
+	}
+	
+	.hero-btns {
+		
+		.btn {
+			width:100%;
+			margin-bottom:20px;
+		}
+		
+	}
+	
+}
+
+section.using {
+	background: $blue;
+	color:white;
+	font-family: 'mont-hairline';
+	font-size: 38px;
+	padding:40px;
+	text-align: center;
+	text-transform: uppercase;
+	
+	span {
+		display: block;
+		
+		img {
+			display: inline-block;
+		}
+	}
+	
+}
+
+section.greatFor {
+	div.tc {
+		padding:0px;
+		
+		div.tcp {
+			padding:40px 40px 0px 40px;
+		}
+		
+		div.tc-img {
+			height:200px;
+			margin-top:40px;
+		}
+		
+	}
+}
+
+.content.white {
+	background: white;
+}
+
+.pad100 {
+	padding:40px;
+}
+
+span.half-title {
+	font-family: 'mont-bold';
+	font-size: 28px;
+	text-transform: uppercase;
+	display: block;
+	color:$black;
+	
+	span {
+		display: block;
+		width:90%;
+		height: 1px;
+		background: rgba($black, 0.5);
+		margin:20px 0px;
+		
+		&.orange {
+			background: $orange;
+		}
+		
+	}
+}
+
+img.ib {
+	display: inline-block;
+	margin-bottom:40px;
+}
+
+section.content.gray {
+	background: $lightGray;
+}
+
+ul.feature-list {
+	
+	padding:0px;
+	margin:0px;
+	
+	li {
+		
+		display: block;
+		list-style: none;
+		margin-bottom:40px;
+		
+		div.row div.col-xs-10 {
+			padding-left:40px;
+		}
+		
+		span.number {
+			background: url(../img/icons/number-circle.png) no-repeat center center;
+			color: white;
+			font-size: 12px;
+			font-family: 'mont-semibold';
+			padding: 13px 19px;
+			margin-top: -4px;
+			display: block;
+			width: 44px;
+			height: 44px;
+		}
+		
+	}
+	
+	
+}
+
+section.table-top {
+	background: url(../img/table-top.png) no-repeat center center #fff;
+	background-size: cover;
+	
+	p {
+		line-height: 24px;
+	}
+	
+	span.half-title {
+		padding-top:50px;
+	}
+	
+}
+
+section.vendorCta {
+	background: $blue;
+	color:white;
+	padding:40px;
+	text-align: center;
+	
+	span {
+		display: block;
+		margin-right: 0px;
+		font-family: 'mont-light';
+		font-size: 20px;
+		color:white;
+		letter-spacing: 1px;
+	}
+	
+	a {
+		background: white;
+		color:$blue;
+		padding:10px 0px;
+		font-family: 'mont-semibold';
+		text-transform: uppercase;
+		font-size: 15px;
+		border-radius:2px;
+		width:100%;
+		text-align: center;
+		margin-top:40px;
+		display: block;
+		
+		&:hover {
+			background: $orange;
+			color:white;
+		}
+	}
+}
+
+@media(min-width:768px) {
+	section.hero {
+		height: 650px;
+		color:white;
+		padding:100px;
+		margin-top:$headerHeight;
+		position: relative;
+		
+		h1 {
+			font-family: 'mont-black';
+			font-size: 45px;
+			margin: 0px;
+			padding:0px;
+			text-transform: uppercase;
+			width:500px;
+			
+		}
+		
+		h2 {
+			font-family: 'mont-light';
+			font-size:30px;
+			margin: 20px 0px;
+			padding:0px;
+		}
+		
+		span.hero-text {
+			width:600px;
+			display: block;
+		}
+		
+		.btn-outline {
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-right:20px;
+		}
+		
+		.hero-btns {
+			position: absolute;
+			right:100px;
+			bottom:100px;
+			
+			.btn {
+				width:auto;
+				margin-bottom:0px;
+			}
+			
+		}
+		
+	}
+	
+	.pad100 {
+		padding:100px;
+	}
+	
+	
+	ul.feature-list {
+		
+		li {
+			
+			div.row div.col-xs-10 {
+				padding-left:0px;
+			}
+			
+		}
+	}
+	
+	section.vendorCta {
+		background: $blue;
+		color:white;
+		padding:50px 40px;
+		text-align: center;
+		
+		span {
+			display: inline-block;
+			margin-right: 50px;
+			font-family: 'mont-light';
+			font-size: 22px;
+			color:white;
+			letter-spacing: 2px;
+		}
+		
+		a {
+			background: white;
+			color:$blue;
+			padding:10px 30px;
+			font-family: 'mont-semibold';
+			text-transform: uppercase;
+			font-size: 15px;
+			border-radius:2px;
+			width:auto;
+			margin-top:0px;
+			display: inline-block;
+			
+			&:hover {
+				background: $orange;
+				color:white;
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,44 @@
+a.merchant-editDetails {
+	background: $blue;
+	color:white;
+	padding:8px 11px;
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+
+a.merchant-deletePhoto, a.fundraiser-deletePhoto {
+	position: absolute;
+	right:20px;
+	bottom:20px;
+	opacity: 0;
+}
+
+ul.merchant-photos li:hover a.merchant-deletePhoto {
+	opacity: 1;
+}
+
+ul.merchant-photos li:hover a.fundraiser-deletePhoto {
+	opacity: 1;
+}
+
+.modal {
+	z-index: 10000;
+}
+
+.modal-xl {
+	width:100%;
+	margin:40px;
+	max-width:1366px;
+}
+
+@media(min-width:768px) {
+	.modal-xl {
+		margin:100px auto;
+		
+		div.modal-body {
+			padding:50px;
+		}
+		
+	}
+}
