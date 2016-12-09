@@ -33,6 +33,10 @@
 			<div class="col-sm-12 col-md-12 col-lg-3">
 				<div class="signup-side">
 					<span class="orange-title">Merchant/Vendor Sign Up</span>
+					<br />
+					<p>You have reached the Plenty4/7 new vendor/merchant signup page.</p> 
+
+					<p>Plenty4/7 is absolutely committed to providing new and returning customers for your business via our 100% free marketing program.</p> <p>This page allows you to create/apply for a free merchant profile. Upon acceptance into the program, you will be notified within 1-2 business days of acceptance in order to access your deal management dashboard.</p> <p>We are so excited to partner with you!</p>
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-12 col-lg-9">
