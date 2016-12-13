@@ -150,6 +150,7 @@
 						@endif
 						<input type="hidden" name="_token" value="{{ Session::get('_token') }}">
 						<input type="hidden" name="userType" value="vendor">
+						<input type="checkbox" name="termsconditions" value="confirmed"/> I agree with the <a href="">Terms and Conditions</a>.
 						<button type="submit" name="submitForm" class="btn btn-lg blue pull-right">Continue</button>
 						<div class="clearfix"></div>
 					</form>
