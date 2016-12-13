@@ -10,39 +10,39 @@ $("#merchant-signup").validate({
     errorClass:'error',
     validClass:'success',
     errorElement:'span',
-  onkeyup: false,
-  rules: {
-    email: {
-      required: true,
-      email: true,
-      remote: {
-        url: siteUrl+"merchant/check-email",
-        type: "post",
-        data: {
+    onkeyup: false,
+    rules: {
+      email: {
+        required: true,
+        email: true,
+        remote: {
+          url: siteUrl+"merchant/check-email",
+          type: "post",
+          data: {
 	      _token: function() { return $('meta[name="csrf-token"]').attr('content'); },
-          email: function() { return $("#email").val(); },
+              email: function() { return $("#email").val(); },
+          }
         }
-      }
-    },
-    firstName: { required: true },
-    lastName: { required: true },
-    password: { required: true },
-    passwordConf: { 
+      },
+      firstName: { required: false },
+      lastName: { required: true },
+      password: { required: true },
+      passwordConf: { 
 	    required: true,
 	    equalTo: '#password'
-    },
-    companyName: { required: true },
-    phone: { required: true },
-    address: { required: true },
-    city: { required: true },
-    state: { required: true },
-    zipcode: { required: true },
-    url: { url: true }
-    
+      },
+      companyName: { required: false },
+      phone: { required: true },
+      address: { required: true },
+      city: { required: true },
+      state: { required: true },
+      zipcode: { required: true },
+      url: { url: true },
+      termsconditions: { required: true }
   },
   messages: {
     email: {
-      remote: "This email address already exists!"
+      remote: "This email address already exists."
     }
   },
   submitHandler: function(form) {

@@ -143,6 +143,7 @@
 									</div>
 								</div>
 							</div>
+						<input type="checkbox" id="termsconditions" name="termsconditions" class="form-control"title="You must agree with our Terms and Conditions to sign up." /> I agree with the <a href="/terms">Terms and Conditions</a>.
 						</fieldset>
 						
 						@if(isset($prefill))
@@ -150,7 +151,6 @@
 						@endif
 						<input type="hidden" name="_token" value="{{ Session::get('_token') }}">
 						<input type="hidden" name="userType" value="vendor">
-						<input type="checkbox" name="termsconditions" value="confirmed"/> I agree with the <a href="">Terms and Conditions</a>.
 						<button type="submit" name="submitForm" class="btn btn-lg blue pull-right">Continue</button>
 						<div class="clearfix"></div>
 					</form>
