@@ -26,7 +26,9 @@
 				@if($content->top_section_button_text_2) 
 			    <a href="#" data-toggle="modal" data-target="#videoModal" class="btn btn-outline">{{$content->top_section_button_text_2}}&nbsp;&nbsp;<img src="assets/img/play-button-25.png" /></a> 
 			    @endif()
+				@if($content->top_section_heading=="BECOME A VENDOR OR MERCHANT")
 				<a href="{{$content->top_section_button_link}}" class="btn btn-lg btn-white">{{$content->top_section_button_text}}</a>
+				@endif()
 			</div>
 		</section>
 		<!-- End Hero -->
