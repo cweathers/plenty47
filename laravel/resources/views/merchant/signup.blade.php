@@ -143,7 +143,8 @@
 									</div>
 								</div>
 							</div>
-						<input type="checkbox" id="termsconditions" name="termsconditions" class="form-control"title="You must agree with our Terms and Conditions to sign up." /> I agree with the <a href="/terms">Terms and Conditions</a>.
+						<div class="row">
+						<input type="checkbox" id="termsconditions" name="termsconditions" style="width: 10%; float: left;" class="form-control" title="You must agree with our Terms and Conditions to sign up." /> I agree with the <a href="/legal">Terms and Conditions</a>.</div>
 						</fieldset>
 						
 						@if(isset($prefill))
