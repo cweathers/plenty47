@@ -157,7 +157,8 @@ class MerchantController extends Controller
 	    
 	    //Now send them along their way to the 2nd signup page...
 	    
-	    return redirect('/merchant-signup/enhance-profile');
+	//    return redirect('/merchant-signup/enhance-profile');
+	    return redirect('/merchant-dashboard');
         
     }
     

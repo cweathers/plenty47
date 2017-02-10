@@ -83,7 +83,8 @@
 				</div>
 			</fieldset>
 			<fieldset>
-				<p><img src="{{asset('/uploads/'.$vendor->logo)}}" class="img-responsive currentLogo"></p>
+				
+				@if($vendor->logo == true)<p><img src="{{asset('/uploads/'.$vendor->logo)}}" class="img-responsive currentLogo"></p>@endif()
 				<legend>Upload/Change Your Logo</legend>
 				<p>A square image works best!</p>
 				<div id="proflogolist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
@@ -91,7 +92,7 @@
 				
 				<div id="logoContainer">
 				    <a id="profpickLogo" href="javascript:;" class="btn btn-default">Select Logo</a> 
-				    <a id="profuploadLogo" href="javascript:;" class="btn btn-success">Upload Logo</a>
+				    <a id="profuploadLogo" href="javascript:;" class="btn btn-success">Upload</a>
 				</div>
 			</fieldset>
 			<fieldset>

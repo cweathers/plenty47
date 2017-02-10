@@ -70,7 +70,7 @@
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="addPhotoModalLabel">Upload Photos</h4>
+					        <h4 class="modal-title" id="addPhotoModalLabel">Upload</h4>
 					      </div>
 					      <div class="modal-body">
 					        <div class="row">
@@ -81,7 +81,7 @@
 									
 									<div id="container">
 									    <a id="merchantPickPhotos" href="javascript:;" class="btn btn-default">Select Photos</a> 
-									    <a id="merchantUploadPhotos" href="javascript:;" class="btn btn-success">Upload Photos</a>
+									    <a id="merchantUploadPhotos" href="javascript:;" class="btn btn-success">Upload</a>
 									</div>
 								</div>
 							</div>

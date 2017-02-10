@@ -150,7 +150,30 @@
     @yield('loadScripts')
     <script src="{{asset ('assets/js/min/app.min.js') }}"></script>
     @yield('footer')
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      minWidth: "600",
+      maxWidth: "900",
+      minHeight:"400",
+      maxHeight:"800",
+      show: {
+        effect: "blind",
+        duration: 500
+      },
+      hide: {
+        effect: "blind",
+        duration: 300
+      }
+    });
 
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+  </script>
 <!-- GOOGLE ANALYTICS TRACKING CODE (DEVELOPMENT) -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

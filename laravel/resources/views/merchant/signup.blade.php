@@ -92,6 +92,7 @@
 										</select>									
 									</div>
 								</div>
+								<!--
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>choose a market</label>
@@ -103,6 +104,7 @@
 										</select>									
 									</div>
 								</div>
+								-->
 								<div class="col-md-12">
 									<div class="form-group">
 										<label>phone</label>
@@ -144,7 +146,12 @@
 								</div>
 							</div>
 						<div class="row">
-						<input type="checkbox" id="termsconditions" name="termsconditions" style="width: 10%; float: left;" class="form-control" title="You must agree with our Terms and Conditions to sign up." /> I agree with the <a href="/legal">Terms and Conditions</a>.</div>
+						<input type="checkbox" id="termsconditions" name="termsconditions" style="width: 5%; float: left;" class="form-control" title="You must agree with our Terms and Conditions to sign up." /> I agree with the <a id="opener" style="cursor: pointer;">Terms and Conditions</a>.</div>
+						<div id="dialog" style="overflow:hidden;" title="Terms and Conditions">
+						<iframe style="position: absolute; height: 100%; width: 100%;" src="/legal"></iframe>
+						 
+						</div>
+ 
 						</fieldset>
 						
 						@if(isset($prefill))
@@ -152,6 +159,7 @@
 						@endif
 						<input type="hidden" name="_token" value="{{ Session::get('_token') }}">
 						<input type="hidden" name="userType" value="vendor">
+						<input type="hidden" name="market" value="6d">
 						<button type="submit" name="submitForm" class="btn btn-lg blue pull-right">Continue</button>
 						<div class="clearfix"></div>
 					</form>

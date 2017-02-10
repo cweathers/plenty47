@@ -15,7 +15,7 @@
 				
 				<div id="container">
 				    <a id="pickProfileImage" href="javascript:;" class="btn btn-default">Select Photos</a> 
-				    <a id="uploadProfileImage" href="javascript:;" class="btn btn-success">Upload Profile Image</a>
+				    <a id="uploadProfileImage" href="javascript:;" class="btn btn-success">Upload</a>
 				</div>
 			</div>
 		</div>

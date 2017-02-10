@@ -50,8 +50,8 @@
 							</div>
 						</fieldset>
 						<fieldset>
-							<legend>Upload Your Logo</legend>
-							<p>A square image works best!</p>
+							<legend>Upload Logo</legend>
+							<p>Minimum resolution of 500p x 500p. JPG, PNG.</p>
 							<div id="logolist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
 							<br />
 							
@@ -61,8 +61,8 @@
 							</div>
 						</fieldset>
 						<fieldset>
-							<legend>Upload A Profile Cover Image</legend>
-							<p>We use cover images for our merchant profiles, similar to facebook and twitter. Please select a cover image.</p>
+							<legend>Upload Banner Image</legend>
+							<p>Recommended resolution of 1600p x 600p. JPG, PNG.</p>
 							<div id="coverlist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
 							<br />
 							
@@ -114,6 +114,7 @@
 								</div>
 							</div>
 						</fieldset>
+						<!--
 						<fieldset>
 							<legend>Add Photos To Your Gallery</legend>
 							<div class="row">
@@ -129,7 +130,7 @@
 								</div>
 							</div>
 						</fieldset>
-						
+						-->
 						<input type="hidden" name="vendor_id" value="{{$vendor['vendor_id']}}">
 						<input type="hidden" name="_token" value="{{ Session::get('_token') }}">
 						<a href="/merchant-signup" class="btn btn-default">back</a> <button type="submit" name="submitForm" class="btn btn-lg blue pull-right">Continue</button>
